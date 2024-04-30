@@ -436,7 +436,7 @@
 					const message = `Your appointment ${i} has been approved.`; // Message for approval
 
 					// Make a fetch request to your API endpoint
-					fetch(`http://localhost:5000/send-sms?phone=${phoneNumber}&message=${message}`, {
+					fetch(`https://med-man.onrender.com/send-sms?phone=${phoneNumber}&message=${message}`, {
 						method: 'GET',
 						headers: {
 							'Content-Type': 'application/json'
@@ -471,7 +471,7 @@
 					const message = `Your appointment ${i + 1} has been rejected.`; // Message for rejection
 
 					// Make a fetch request to your API endpoint
-					fetch(`http://localhost:5000/send-sms?phone=${phoneNumber}&message=${message}`, {
+					fetch(`https://med-man.onrender.com/send-sms?phone=${phoneNumber}&message=${message}`, {
 						method: 'GET',
 						headers: {
 							'Content-Type': 'application/json'
