@@ -157,6 +157,7 @@
                                 <th scope="col">Email</th>
                                 <th scope="col">Phone</th>
                                 <th scope="col">Department</th>
+				<th scope="col">Doctor</th>
                                 <th scope="col">Date</th>
                                 <th scope="col">Message</th>
                                 <th scope="col">Approve</th>
@@ -416,6 +417,7 @@
 				row.insertCell(-1).innerHTML = doc.data().Email;
 				row.insertCell(-1).innerHTML = doc.data().Phone;
 				row.insertCell(-1).innerHTML = doc.data().Dept;
+				row.insertCell(-1).innerHTML = doc.data().Doctor;
 				row.insertCell(-1).innerHTML = doc.data().Date;
 				row.insertCell(-1).innerHTML = doc.data().Message;
 				// Create approve button with event listener
